@@ -8,13 +8,14 @@ metadata:
 spec:
   source:
     git:
-      url: https://github.com/sample-accelerators/spring-sensors-rabbit.git
+      url: https://github.com/blankpge/spring-sensors-tap.git
       ref:
         branch: main
   serviceClaims:
     - name: rmq
       ref:
-        apiVersion: rabbitmq.com/v1beta1
+        apiVersion: s
         kind: RabbitmqCluster
         name: rmq-1
+
 

@@ -1,0 +1,10 @@
+apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+kind: ClusterResource
+metadata:
+  name: rabbitmq
+spec:
+  shortDescription: It's a RabbitMQ cluster!
+  longDescription: A consistent and easy way to deploy RabbitMQ clusters to Kubernetes and run them, including "day two" (continuous) operations.
+  resourceRef:
+    group: rabbitmq.com
+    kind: RabbitmqCluster
