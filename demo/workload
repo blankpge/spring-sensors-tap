@@ -3,6 +3,7 @@ tanzu apps workload create spring-sensors-consumer-web \
   --git-branch main \
   --type web \
   --service-ref="rmq=services.apps.tanzu.vmware.com/v1alpha1:ResourceClaim:rmq-1"
+  --names
 
 tanzu apps workload create \
   spring-sensors-producer \

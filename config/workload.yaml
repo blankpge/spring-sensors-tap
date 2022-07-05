@@ -1,9 +1,9 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
-  name: spring-sensors
+  name: spring-sensors-consumer-web
   labels:
-    app.kubernetes.io/part-of: spring-sensors
+    app.kubernetes.io/part-of: spring-sensors-consumer-web
     apps.tanzu.vmware.com/workload-type: web
 spec:
   source:
@@ -14,7 +14,7 @@ spec:
   serviceClaims:
     - name: rmq
       ref:
-        apiVersion: s
+        apiVersion: services.apps.tanzu.vmware.com/v1alpha1
         kind: RabbitmqCluster
         name: rmq-1
 
